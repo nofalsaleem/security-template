@@ -15,8 +15,11 @@ html {
   --clr-white-smoke: #EBEBEB;
   --clr-secondary-light: #292929;
   
-  font-family: Helvetica, sans-serif
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     
+}
+body{
+overflow-x: hidden;
 }
 
 /* Navbar */
@@ -29,7 +32,7 @@ html {
     overflow: hidden;
     background-color:var();
     margin-left:-50px;
-    padding: 20px;
+    padding:25px;
   
   }
   
@@ -42,18 +45,17 @@ html {
   }
   .topnav a {
     display:flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    float: right;
-   
+  
     color: var(--clr-secondary);
-    text-align:center;
-    padding: 20px 25px;
+    
+    margin: 10px 38px;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    margin:-5px;
-    align-content:center;
+    
+    
   }
   
   
@@ -134,7 +136,6 @@ html {
      background-image: url("img/london-image.jpg");
      background-position: center;
      background-size: cover;
-    
      height:500px;
      margin-top:-60px;
      border-bottom: 10px solid var(--clr-primary);
@@ -156,8 +157,9 @@ html {
     flex-direction: column;
      justify-content:start;
      align-items: start;
-     font-size: 40px;
-     padding:0px 1500px 0px 200px;
+     font-size: 55px;
+     font-weight: 700;
+     padding:0px 1500px 10px 300px;
      color:var(--clr-light); 
      width:40%;
 }
@@ -168,7 +170,7 @@ html {
      justify-content:start;
      align-items: start;
      font-size: 20px;
-     padding:30px 1100px 10px 200px;
+     padding:30px 1100px 10px 300px;
      color:var(--clr-light); 
      width:40%;
      
@@ -179,10 +181,10 @@ html {
     flex-direction: column;
      justify-content:center;
      align-items: center;
-     font-size: 20px;
-     width:35%;
+     font-size: 14px;
+     width:41%;
    
-     padding:15px 50px 10px 50px;
+     padding:15px 20px;
 }
 
 .section-hero-btn
@@ -192,7 +194,7 @@ html {
      justify-content:center;
      align-items: center;
      font-size: 18px;
-     padding:15px 40px 10px 40px;
+     padding:15px 20px;
      background-color: var(--clr-primary);
      border: 2px var(--clr-primary-dark);
      color:white;
@@ -200,72 +202,80 @@ html {
    
 }
 @media screen and (min-width: 320px) and (max-width: 580px) {
-  .section-hero {
-    flex-direction: column;
-    font-size: 0.5em;
-    width:100%;
-    height:100%;
-    padding:10px;
-  }
-  .section-hero-box1
-{
-    display: flex;
- flex-direction: column;
-  justify-content:start;
-  align-items: start;
-  width: 100%;
   
-
-}
-.section-hero-heading-one
-{
-    display: flex;
-    flex-direction: column;
-     justify-content:start;
-     align-items: start;
-     font-size: 30px;
-     padding:0px 1100px 0px 50px;
-     color:var(--clr-light); 
-     width:50%;
-}
-.section-hero-paragrapgh-one
-{
-  display: flex;
-  flex-direction: column;
-   justify-content:start;
-   align-items: start;
-   font-size: 20px;
-   padding:30px 1100px 10px 50px;
-   color:var(--clr-light); 
-   width:100%;
+  .section-hero
+  {
+      display:flex;
+      justify-content:center;
+      align-items: center;
+       background-image: url("img/london-image.jpg");
+       background-position: center;
+       background-size: cover;
+       height:500px;
+       margin-top:-60px;
+       border-bottom: 10px solid var(--clr-primary);
+  }
+  
+  .section-hero-box1
+  {
+      display: flex;
+   flex-direction: column;
+    justify-content:start;
+    align-items: start;
+    width: 100%;
+    
+  
+  }
+  .section-hero-heading-one
+  {
+      display: flex;
+      flex-direction: column;
+       justify-content:start;
+       align-items: start;
+       font-size: 24px;
+       font-weight: 700;
+       padding:30px 100px 10px 50px;
+       color:var(--clr-light); 
+       width:80%;
+  }
+  .section-hero-paragrapgh-one
+  {
+      display: flex;
+      flex-direction: column;
+       justify-content:start;
+       align-items: start;
+       font-size: 20px;
+       padding:30px 100px 10px 50px;
+       color:var(--clr-light); 
+       width:80%;
+       
+  }
+  .section-hero-button
+  {
+      display: flex;
+      flex-direction: column;
+       justify-content:center;
+       align-items: center;
+       font-size: 14px;
+       width:41%;
      
-}
-.section-hero-button
-{
-    display: flex;
-    flex-direction: column;
-     justify-content:center;
-     align-items: center;
-     font-size: 20px;
-     width:60%;
-   
-     padding:15px 50px 10px 50px;
-}
-
-.section-hero-btn
-{
-    display: flex;
-    flex-direction: column;
-     justify-content:center;
-     align-items: center;
-     font-size: 18px;
-     padding:15px 40px 10px 40px;
-     background-color: var(--clr-primary);
-     border: 2px var(--clr-primary-dark);
-     color:white;
-   
-   
-}
+       padding:15px 20px;
+  }
+  
+  .section-hero-btn
+  {
+      display: flex;
+      flex-direction: column;
+       justify-content:center;
+       align-items: center;
+       font-size: 18px;
+       padding:15px 20px;
+       background-color: var(--clr-primary);
+       border: 2px var(--clr-primary-dark);
+       color:white;
+     
+     
+  }
 }
 @media screen and (min-width: 580px) and (max-width: 760px) {
   .section-hero {
@@ -400,14 +410,14 @@ html {
 {
     text-align: center;
     background-color: var(--clr-white-smoke);
-    padding:80px 200px;
+    padding: 10px 206px;
 }
 .section-service
 {
     display:flex;
     justify-content:center;
     align-items: center;
-    background-color: var(--clr-white-smoke);
+    margin:30px;
    
   
 }
@@ -418,8 +428,8 @@ html {
   justify-content:center;
   align-items: center;
   width: 15%;
-  padding:80px 40px;
-
+  padding:80px 50px;
+ margin:20px;
 }
 .section-services-box2
 {
@@ -429,7 +439,7 @@ html {
   align-items: center;
   width: 15%;
   padding:80px 40px;
- 
+  margin:20px;
 }
 .section-services-box3
 {
@@ -536,7 +546,8 @@ html {
     display:flex;
     justify-content:start;
     align-items: start;
-    background-color: var(--clr-white-smoke);
+    background-color: var(--clr-light);
+    
   
 }
 .section-three-box1
@@ -561,8 +572,11 @@ html {
 }
 .section-three-img
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:90%;
-    height:600px;
+    height:500px;
     border-radius: 50px;
     border: groove 4px  var(--clr-primary);
  
@@ -577,13 +591,21 @@ html {
     font-size: 35px;
   
 }
-
+.separator-one {
+  width: 160px;
+  height: 6px;
+  margin: 20px 0px 0px 300px;
+  width:20%;
+  background-color: #a21047;
+ 
+}
 
 .section-three-paragraph
 {
     display:flex;
     padding:50px 50px 0px 300px;
-    font-size: 19px; 
+    font-size: 19px;
+    font-weight: 400; 
     line-height: 30px;
     color:var(--clr-secondary-light);
     font-weight: 100;
@@ -597,22 +619,28 @@ html {
      justify-content:center;
      align-items: center;
      font-size: 20px;
-     width:88%;
+     width:75%;
    
-     padding:20px 50px 10px 50px;
+     padding:15px 20px;
 }
+
+
 .section-three-btn
 {
-    display: flex;
-    flex-direction: column;
-     justify-content:center;
-     align-items: center;
-     font-size: 18px;
-     padding:15px 60px 18px 50px;
-     background-color: var(--clr-primary);
-     border: 2px var(--clr-primary-dark);
-     color:white;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0;
+  border: none;
+  background-color: #a21047;
+   
+   
 }
+
 @media screen and (min-width: 320px) and (max-width: 580px) {
     .section-three {
       flex-direction: column;
@@ -753,20 +781,24 @@ html {
 .section-three-heading
 {
     display:flex;
-    padding:300px 0px 0px 100px;
-    font-size: 35px;
-  
+    width: 450px;
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 36px;
+    color: #191c1f;
 }
 
 
 .section-three-paragraph
 {
     display:flex;
-    padding:50px 50px 0px 100px;
-    font-size: 19px; 
-    line-height: 30px;
-    color:var(--clr-secondary-light);
-    font-weight: 100;
+    width: 530px;
+    margin-bottom: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    color: #495057;
   
 }
 .section-three-button
@@ -806,11 +838,11 @@ html {
   {
       display: flex;
       flex-direction: column;
-      justify-content:center;
-      align-items: center;
-      width: 100%;
-    margin-top:-50px;
-
+      justify-content:start;
+      align-items: start;
+      width: 80%;
+      margin:10px;
+    padding:0px 0px 0px 100px;
   }
   .section-four-box2
   {
@@ -818,8 +850,8 @@ html {
       flex-direction: column;
       justify-content:center;
       align-items: center;
-      width: 100%;
-      margin:20px;
+      width: 80%;
+      margin:10px;
     
   }
   .section-four-box3
@@ -828,22 +860,39 @@ html {
       flex-direction: column;
       justify-content:center;
       align-items: center;
-      width: 100%;
+      width: 80%;
       margin:20px;
      
   }
+  .separator {
+    width: 160px;
+    height: 6px;
+    margin: 20px 0px 0px 200px;
+    background-color: #a21047;
+   
+}
 .section-four-heading
 {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
-  font-family: 600;
-  padding:70px 0px 0px 200px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 35px;
+  padding:10px 0px 0px 200px;
 }
+.section-four-paragraph
+{
+  font-size: 18px;
+  line-height: 27px;
+margin:10px 60px;
+color:grey;
+}
+
 /* Section Four End */
 .wrapper2{
   width: 100%;
+  margin-bottom:30px;
   background-color: var(--clr-white-smoke);
   }
   .blog2{
@@ -898,7 +947,7 @@ html {
     background: var(--clr-primary);
     color: var(--clr-light);
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 5% 0;
     font-size: 16px;
     text-transform: capitalize;
     display: inline-block;
@@ -906,9 +955,10 @@ html {
     position: relative;
     z-index: 2;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0px;
     z-index: 1;
     margin-bottom: 20px;
+    width:100%;
   }
   /* Blog Section End */
   /* Section Six Start */
@@ -917,7 +967,7 @@ html {
       display:flex;
       justify-content:start;
       align-items: start;
-      background-color: var(--clr-white-smoke);
+      background-color: var(--clr-light);
      
   }
   .section-six-box1
@@ -954,7 +1004,7 @@ html {
   .section-six-heading
   {
       display:flex;
-      padding:300px 0px 0px 250px;
+      padding:300px 0px 0px 300px;
       font-size: 35px;
     
   }
@@ -963,7 +1013,7 @@ html {
   .section-six-paragraph
   {
       display:flex;
-      padding:50px 50px 0px 250px;
+      padding:50px 50px 0px 300px;
       font-size: 19px; 
       line-height: 30px;
       color:var(--clr-secondary-light);
@@ -973,26 +1023,25 @@ html {
   
   .section-six-button
   {
-      display: flex;
-      flex-direction: column;
-       justify-content:center;
-       align-items: center;
-       font-size: 20px;
-       width:90%;
-     
-       padding:20px 20px 10px 0px;
+    display: flex;
+    flex-direction: column;
+     justify-content:center;
+     align-items: center;
+     font-size: 20px;
+     width:72%;
+     padding: 15px 20px;
   }
   .section-six-btn
   {
-      display: flex;
-      flex-direction: column;
-       justify-content:center;
-       align-items: center;
-       font-size: 18px;
-       padding:15px 60px 18px 50px;
-       background-color: var(--clr-primary);
-       border: 2px var(--clr-primary-dark);
-       color:white;
+    display: flex;
+    flex-direction: column;
+     justify-content:center;
+     align-items: center;
+     font-size: 14px;
+     padding: 15px 20px;
+     background-color: var(--clr-primary);
+     border: 2px var(--clr-primary-dark);
+     color:white;
   }
   @media screen and (min-width: 320px) and (max-width: 580px) {
       .section-six{
@@ -1190,7 +1239,7 @@ html {
     justify-content:center;
     align-items: center;
     background-color: var(--clr-white-smoke);
-    width: 100%;
+   padding:15px 68px;
    
   
 }
@@ -1200,11 +1249,11 @@ html {
  flex-direction: column;
   justify-content:center;
   align-items: center;
-  width:50%;
+  width:100%;
   border-radius: 30px;
-  border: groove 2px  var(--clr-primary);
-  padding:80px 40px;
-  background-color: white;
+ 
+  padding:80px 20px;
+ 
   margin:20px;
 }
 .section-seven-box2
@@ -1213,10 +1262,10 @@ html {
   flex-direction: column;
    justify-content:center;
    align-items: center;
-   width:50%;
+   width:60%;
    border-radius: 30px;
-   border: groove 2px  var(--clr-primary);
-   padding:80px 40px;
+  
+   padding:30px 20px;
    background-color: white;
    margin:20px;
 }
@@ -1228,7 +1277,7 @@ html {
    align-items: center;
    width:50%;
    border-radius: 30px;
-   border: groove 2px  var(--clr-primary);
+ 
    padding:80px 40px;
    background-color: white;
    margin:20px;
@@ -1241,7 +1290,7 @@ html {
    align-items: center;
    width:50%;
    border-radius: 30px;
-   border: groove 2px  var(--clr-primary);
+
    padding:80px 40px;
    background-color: white;
    margin:20px;
@@ -1268,7 +1317,7 @@ html {
   align-items: center;
   width:100%;
   border-radius: 30px;
-  border: groove 2px  var(--clr-primary);
+  
   padding:50px 150px;
   background-color: white;
   margin:20px;
@@ -1294,7 +1343,6 @@ html {
    align-items: center;
    width:100%;
    border-radius: 30px;
-   border: groove 2px  var(--clr-primary);
    padding:50px 150px;
    background-color: white;
    margin:20px;
@@ -1307,7 +1355,7 @@ html {
    align-items: center;
    width:100%;
    border-radius: 30px;
-   border: groove 2px  var(--clr-primary);
+ 
    padding:50px 150px;
    background-color: white;
    margin:20px;
@@ -1382,7 +1430,7 @@ html {
     display:flex;
     justify-content:center;
     align-items: center;
-    background-color: var(--clr-white-smoke);
+  
     
    
   
@@ -1393,8 +1441,7 @@ html {
  flex-direction: column;
   justify-content:center;
   align-items: center;
-  width:100%;
-  margin:5px;
+   margin:27px;
 }
 @media screen and (min-width: 320px) and (max-width: 580px) {
   .section-eight {
