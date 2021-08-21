@@ -7,22 +7,36 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  />
     <title>MAGENTA SECURITY GUARD</title>
+
 </head>
 <body>
     <div class="topnav">
-
- <ul>
+        <button class="hamburgur" id="hamburgur"><i class="fas fa-bars"></i></button>
+ <ul id="topnavul">
      <li class="li"><a href="#">Home</a></li>
      <li class="li"><a href="#">About</a></li>
-     <li class="li"><a href="#">Service</a></li>
+    
+     <div class="dropdown">
+        <li class="li"><a href="#">Services</a></li>
+        <div class="dropdown-content">
+          <a href="#">Job</a>
+          <a href="#">Web Developer</a>
+          <a href="#">Mobile Developer</a>
+        </div>
+      </div> 
      <li class="li"><a href="#">Sector</a></li>
-     <li class="li"><a href="#">Contact Us</a></li>
+     <li class="li"> <a href="#">Contact Us</a></li>
+  
      <a class="logo" href=""><img class="logo-img" src="img/logo.png" ></a> 
+ 
      <li class="li"> <a class="quote" href="#"><b><u> GET A QUOTE</u></b></a></li>
-     <li class="li"> <a href="#"><i class="fas fa-phone-alt"></i><b> 0800 772 3786</b></a></li>
+     <li class="li"> <a  class="num"href="#"><i class="fas fa-phone-alt"></i><b> 0800 772 3786</b></a></li>
      <p class="main-menu__24-hours">24 hours</p>
- </ul>
+    </ul>
+   
    </div>
+  
+   <!-- Nav bar end -->
    <section >
 <div class="section-hero">
 <div class="section-hero-box1">
@@ -311,5 +325,6 @@
     
     
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
